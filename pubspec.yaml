@@ -8,7 +8,10 @@ environment:
   sdk: '>=1.20.1 <2.0.0'
 
 dependencies:
-  grizzly_primitives: ^0.0.7
+  grizzly_primitives: # ^0.0.7
+    path: ../grizzly_primitives
+  grizzly_array: #^1.0.0
+    path: ../grizzly_array
 
 dev_dependencies:
   test: ^0.12.0
