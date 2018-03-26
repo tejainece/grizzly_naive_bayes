@@ -1,7 +1,9 @@
 part of grizzly.naive_bayes;
 
 /// Multinomial naive bayes estimator
-class MultinomialNB extends DiscreteNaiveBayes {
+class MultinomialNB implements DiscreteNaiveBayes {
+  const MultinomialNB();
+
   MultinomialNBModel<LT> fit<LT>(Numeric2DView<double> x, ArrayView y,
       {ArrayView labels,
       NumericSeries<LT, double> labelPriori,

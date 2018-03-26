@@ -12,7 +12,7 @@ Int2D labelBinarize<E>(ArrayView<E> y, {ArrayView<E> labels}) {
 
   Int2D ret = new Int2D.sized(y.length, labels.length);
   for(int i = 0; i < y.length; i++) {
-    final Int1D row = ret[i];
+    final Int1DFix row = ret[i];
     final E value = y[i];
     for(int j = 0; j < numLabels; j++) {
       row[j] = value == labels[j]? 1: 0;
